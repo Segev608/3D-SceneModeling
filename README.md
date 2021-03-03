@@ -92,3 +92,18 @@ In order to get values of refraction and reflection, every time we get a cut in 
 It turns out that in geometric shapes that allow reflection, we get a glass look. Of course the creation of the rays will be possible thanks to the recursion performed at the point (the same point where the current color is calculated. Of course we will make sure that the recursion depth is not too large given that there is no end to the amount of refraction and reflection (The same point where the current color is calculated. Of course we will make sure that the depth of the recursion is not too great given that there is no end to the amount of refraction and reflections that can happen in transparent shapes, or between reflective shapes).
 
 ![image](https://user-images.githubusercontent.com/57367786/109843627-f0dbd280-7c53-11eb-9d46-931bc929a795.png)
+
+## Step 8 -  Picture Improvement Algorithms
+In order to present a smoother image we have introduced the following algorithms:
+
+### Multiple Eye-Rays
+The idea is to launch several rays per (through each) pixel and calculate the weighted average of the total color values obtained. Basically if we get that at that point there are two colors, we get a nice "smear" of the values so that the overall picture looks smoother
+
+![image](https://user-images.githubusercontent.com/57367786/109845047-65fbd780-7c55-11eb-8ba8-ada1768703d8.png)
+
+
+### Multiple Shadow-Rays
+As we did above, every time we check the shadow at a certain point, we will launch a few rays from that point towards the light sources, and we will take the weighted average. Here, too, a beautiful "smear" of the values can be formed and we get a pleasant fading of the shadow.
+
+![image](https://user-images.githubusercontent.com/57367786/109845696-179b0880-7c56-11eb-8019-ce4c4488d8d7.png)
+
