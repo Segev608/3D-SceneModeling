@@ -114,6 +114,7 @@ The first thing we added is the option for parallel running using threads that c
 
 The second improvement added is to reduce the amount of rays generated. In previous image enhancements we have seen, lots of new rays have been created that calculate the point color. Now, since the function that calculates the point color is recursive, a single calculation can take a lot of time. Thus, we used an adaptive algorithm to improve the image, the super sampling algorithm.
 
-![image](https://user-images.githubusercontent.com/57367786/109846925-57aebb00-7c57-11eb-849f-b0b8030adecb.png)
+![image](https://user-images.githubusercontent.com/57367786/109847181-93498500-7c57-11eb-8304-e97811145ac4.png)
+
 
 
