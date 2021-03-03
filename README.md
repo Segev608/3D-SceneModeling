@@ -58,3 +58,22 @@ Directional Light Source    |  Point Light Source       |  Spot Light Source
 :-------------------------:|:-------------------------:|:-------------------------:
 ![direct formula](https://user-images.githubusercontent.com/57367786/109837901-51681100-7c4e-11eb-848c-2ca039945f23.png)  |  ![point formula](https://user-images.githubusercontent.com/57367786/109837962-5f1d9680-7c4e-11eb-8074-92956aa4f57e.png)  |  ![spot formula](https://user-images.githubusercontent.com/57367786/109838109-883e2700-7c4e-11eb-886a-69ac62653a08.png)
 
+### Phong Light Model
+In this model the lighting is broken down into two characteristics: 
+- The diffuse part where the light is scattered everywhere but weakens as the angle viewed from it and the angle of impact of the light increases 
+ 
+ ![image](https://user-images.githubusercontent.com/57367786/109839372-b708cd00-7c4f-11eb-8722-5459b850896d.png)
+ 
+ This is because |l*n| represents the Scalar product between the direction of the light & normal to the surface. by multiply this value in the intensity from the light source, we can find the Diffusive value in this current location (kD is the scalar which defined in the material of the geometry - changing that value will give different look)
+
+- The specular part where there is a single reflection of light that creates a kind of flash across the shape which gives it 3D looking.
+
+![image](https://user-images.githubusercontent.com/57367786/109839447-c851d980-7c4f-11eb-9c78-a969e5d0e914.png)
+
+This is because we taking the maximum value of 0 and the casting value which created from the camera angle & specular angle (the Refractive angle created by the light source). the more you parallel to the Refractive angle, you see the specular lighting better. All of that is raised to the power of n-shininess (can be controlled in the material of the object) in order to make the specular circle as small as possible - like in real life. 
+
+The final intensity in a given point can be formulated into:
+
+![image](https://user-images.githubusercontent.com/57367786/109839254-9cceef00-7c4f-11eb-9a52-79fc6d3f6a10.png)
+
+
