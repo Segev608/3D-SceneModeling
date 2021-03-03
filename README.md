@@ -78,3 +78,5 @@ The final intensity in a given point can be formulated into:
 
 *Open the Result folder and see the product so far*...
 
+## Step 7 - Adding shading, refraction and reflection
+
