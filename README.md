@@ -21,6 +21,8 @@ Physically, the rays of light reach our eyes from the environment after hitting 
 
 Thus, we must allow in the software the mathematics capable of calculating the intersections between the rays and the geometries and returning the points of intersection (for the sake of three-dimensional modeling)
 
+![camera definition](https://github.com/Segev608/3D-SceneModeling/blob/main/camera.png)
+
 ## Step 4 - Creating the camera and generating the rays
 At this point, the goal is to create the ***camera*** so that we have several options:
 - Using three vectors, we will control its orientation in space.
