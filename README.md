@@ -117,7 +117,7 @@ The second improvement added is to reduce the amount of rays generated. In previ
 ![image](https://user-images.githubusercontent.com/57367786/109847181-93498500-7c57-11eb-8304-e97811145ac4.png)
 
 ## In conclusion
-After all the fact, we were able to get this beautiful picture while running for close to **two hours** !!
+After all of the above, we were able to get this beautiful picture while running for close to **two hours** !!
 
 ![](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/FinalSuperSoftPicture.jpg)
 
