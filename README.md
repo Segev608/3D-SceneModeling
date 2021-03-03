@@ -27,3 +27,18 @@ Thus, we must allow in the software the mathematics capable of calculating the i
 At this point, the goal is to create the ***camera*** so that we have several options:
 - Using three vectors, we will control its orientation in space.
 - Create the rays in all directions in order to scan the whole scene (the more rays there are - the higher the resolution of the image. A ray per pixel)
+
+## Step 5 - Introducing lighting into the scene
+By controlling the colors and multiplying them by some coefficient, you can control the feeling and give the image three-dimensionality.
+In this section there are several departments that perform the following roles:
+- ***Color***: Responsible for RGB colors
+- ***ImageWriter***: 
+    - Responsible for creating PNG files
+    - Color the pixels in the defined colors
+    - Stores the properties of the image (resolution and size)
+- ***Scene***: Saving all the elements of the scene. for example:
+    - What lighting will be in the scene?
+    - What geometries are modeled?
+    - Save the camera and its location in space
+    - Distance from camera to screen, view-plane. (The screen through which the rays are launched in the direction of the geometries in the image)
+
