@@ -81,3 +81,7 @@ The final intensity in a given point can be formulated into:
 ## Step 7 - Adding shading, refraction and reflection
 The idea in creating the shadow is that whenever we launch a ray from the camera for geometry in the scene, if there is a intersection in the surface, we will use the lighting location (which we already know because we placed them there) and generate another ray for that position. If we seem to have received another intersection between the ray and the light source, we can know that between the initial point of intersection and the light source, there is an object that hides the light and therefore it is necessary to paint in the current place - a shadow.
 
+This formula (besides calculating the intensity in the current point using ***ALL*** the light sources in the scene, this is the sigma in the formula) uses the S factor which checks if there is a shadow in the current point. like I said, if there is a shadow, there is no need to color that pixel - make it black (for now)
+
+![image](https://user-images.githubusercontent.com/57367786/109842846-2633f080-7c53-11eb-8a11-9891493d719a.png)
+
