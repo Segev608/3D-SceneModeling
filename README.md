@@ -42,3 +42,6 @@ In this section there are several departments that perform the following roles:
     - Save the camera and its location in space
     - Distance from camera to screen, view-plane. (The screen through which the rays are launched in the direction of the geometries in the image)
 
+Two-Color Image             |  Multi-Color Image        |  Playing with image creator
+:-------------------------:|:-------------------------:|:-------------------------:
+![base_img](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/base%20render%20test.jpg)  |  ![color_img](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/color%20render%20test.jpg)  |  ![playing_img](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/test.jpg)
