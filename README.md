@@ -76,4 +76,5 @@ The final intensity in a given point can be formulated into:
 
 ![image](https://user-images.githubusercontent.com/57367786/109839254-9cceef00-7c4f-11eb-9a52-79fc6d3f6a10.png)
 
+*Open the Result folder and see the product so far*...
 
