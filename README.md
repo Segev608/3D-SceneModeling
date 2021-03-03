@@ -79,4 +79,5 @@ The final intensity in a given point can be formulated into:
 *Open the Result folder and see the product so far*...
 
 ## Step 7 - Adding shading, refraction and reflection
+The idea in creating the shadow is that whenever we launch a ray from the camera for geometry in the scene, if there is a intersection in the surface, we will use the lighting location (which we already know because we placed them there) and generate another ray for that position. If we seem to have received another intersection between the ray and the light source, we can know that between the initial point of intersection and the light source, there is an object that hides the light and therefore it is necessary to paint in the current place - a shadow.
 
