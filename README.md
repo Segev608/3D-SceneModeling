@@ -30,6 +30,7 @@ At this point, the goal is to create the ***camera*** so that we have several op
 
 ## Step 5 - Introducing lighting into the scene
 By controlling the colors and multiplying them by some coefficient, you can control the feeling and give the image three-dimensionality.
+In this section, the light would be inserted as solid value - Ambient light (the light in the scene 'room')
 In this section there are several departments that perform the following roles:
 - ***Color***: Responsible for RGB colors
 - ***ImageWriter***: 
@@ -45,3 +46,10 @@ In this section there are several departments that perform the following roles:
 Two-Color Image             |  Multi-Color Image        |  Playing with image creator
 :-------------------------:|:-------------------------:|:-------------------------:
 ![base_img](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/base%20render%20test.jpg)  |  ![color_img](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/color%20render%20test.jpg)  |  ![playing_img](https://github.com/Segev608/3D-SceneModeling/blob/main/Results/test.jpg)
+
+Until now, the Intensity in a given point has been calculated by this formula:
+
+![image](https://user-images.githubusercontent.com/57367786/109837379-ca1a9d80-7c4d-11eb-99dd-8a520a08caca.png)
+
+## Step 6 - Integration of material in the geometric shapes and improvement of the lighting for the Pong model
+
