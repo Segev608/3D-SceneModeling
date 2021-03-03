@@ -107,3 +107,13 @@ As we did above, every time we check the shadow at a certain point, we will laun
 
 ![image](https://user-images.githubusercontent.com/57367786/109845696-179b0880-7c56-11eb-8019-ce4c4488d8d7.png)
 
+## Step 9 - Performance Improvements
+After we finished implementing the algorithms and came running, we discovered that creating a single image can take up to **6 hours** !! Therefore, there is a need to add mechanisms that will allow for improved performance and significant reduction of runtime
+
+The first thing we added is the option for parallel running using threads that cooperate and approach coloring together so that if there are 10 of them running together, each calculates the color in its own pixel and once it finishes it takes a new pixel independently of the other threads
+
+The second improvement added is to reduce the amount of rays generated. In previous image enhancements we have seen, lots of new rays have been created that calculate the point color. Now, since the function that calculates the point color is recursive, a single calculation can take a lot of time. Thus, we used an adaptive algorithm to improve the image, the super sampling algorithm.
+
+![image](https://user-images.githubusercontent.com/57367786/109846925-57aebb00-7c57-11eb-849f-b0b8030adecb.png)
+
+
