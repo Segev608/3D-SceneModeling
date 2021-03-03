@@ -49,7 +49,12 @@ Two-Color Image             |  Multi-Color Image        |  Playing with image cr
 
 Until now, the Intensity in a given point has been calculated by this formula:
 
-![image](https://user-images.githubusercontent.com/57367786/109837379-ca1a9d80-7c4d-11eb-99dd-8a520a08caca.png)
+![basic formula](https://user-images.githubusercontent.com/57367786/109837379-ca1a9d80-7c4d-11eb-99dd-8a520a08caca.png)
 
 ## Step 6 - Integration of material in the geometric shapes and improvement of the lighting for the Pong model
+Below are the functions for calculating the lighting at a particular point depending on the type of lighting
+
+Directional Light Source    |  Point Light Source       |  Spot Light Source
+:-------------------------:|:-------------------------:|:-------------------------:
+![direct formula](https://user-images.githubusercontent.com/57367786/109837901-51681100-7c4e-11eb-848c-2ca039945f23.png)  |  ![point formula](https://user-images.githubusercontent.com/57367786/109837962-5f1d9680-7c4e-11eb-8074-92956aa4f57e.png)  |  ![spot formula](https://user-images.githubusercontent.com/57367786/109838109-883e2700-7c4e-11eb-886a-69ac62653a08.png)
 
